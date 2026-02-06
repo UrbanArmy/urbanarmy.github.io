@@ -64,6 +64,7 @@
             var app = document.getElementById("app");
 
             var isAmazeballz = host === "amazeballz.urbanarmy.se";
+            var isTilit = host === "tilit.urbanarmy.se";
 
             if (isAmazeballz) {
                 document.title = "Amazeballz | Urban Army";
@@ -71,6 +72,16 @@
                     "<span class=\"tag\">Amazeballz</span>" +
                     "<h1>Welcome to Amazeballz</h1>" +
                     "<p>This is the dedicated page for the amazeballz subdomain.</p>" +
+                    "<p>Replace this content with the specific HTML you want to show.</p>";
+                return;
+            }
+
+            if (isTilit) {
+                document.title = "Tilit | Urban Army";
+                app.innerHTML =
+                    "<span class=\"tag\">Tilit</span>" +
+                    "<h1>Welcome to Tilit</h1>" +
+                    "<p>This is the dedicated page for the tilit subdomain.</p>" +
                     "<p>Replace this content with the specific HTML you want to show.</p>";
                 return;
             }
