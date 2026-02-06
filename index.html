@@ -65,14 +65,14 @@
 
             var isAmazeballz = host === "amazeballz.urbanarmy.se";
             var isTilit = host === "tilit.urbanarmy.se";
+            var isShop = host === "shop.urbanarmy.se";
 
             if (isAmazeballz) {
                 document.title = "Amazeballz | Urban Army";
                 app.innerHTML =
                     "<span class=\"tag\">Amazeballz</span>" +
                     "<h1>Welcome to Amazeballz</h1>" +
-                    "<p>This is the dedicated page for the amazeballz subdomain.</p>" +
-                    "<p>Replace this content with the specific HTML you want to show.</p>";
+                    "<p>Amazeballz is a physics‑driven tilt puzzler where precision beats speed. Roll, spin, and time your moves to guide color‑matched balls into their holes on a sleek, minimalist board. It’s a tactile, real‑world feel—best played on a physical device—where every subtle motion counts.</p>";
                 return;
             }
 
@@ -81,8 +81,16 @@
                 app.innerHTML =
                     "<span class=\"tag\">Tilit</span>" +
                     "<h1>Welcome to Tilit</h1>" +
-                    "<p>This is the dedicated page for the tilit subdomain.</p>" +
-                    "<p>Replace this content with the specific HTML you want to show.</p>";
+                    "<p>This is the dedicated page for the tilit subdomain.</p>";
+                return;
+            }
+
+            if (isShop) {
+                document.title = "Shop | Urban Army";
+                app.innerHTML =
+                    "<span class=\"tag\">Shop</span>" +
+                    "<h1>Welcome to Urban Army</h1>" +
+                    "<p>Urban Army is a Swedish online store for curated art prints, featuring themed collections and a large catalog.</p>";
                 return;
             }
 
