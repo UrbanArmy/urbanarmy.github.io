@@ -5,6 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Urban Army</title>
+    <meta property="og:title" content="Urban Army" id="meta-og-title" />
+    <meta property="og:description" content="Independent game and product studio." id="meta-og-description" />
+    <meta property="og:type" content="website" id="meta-og-type" />
+    <meta property="og:url" content="https://urbanarmy.se" id="meta-og-url" />
+    <meta property="og:image" content="https://urbanarmy.se/og-default.png" id="meta-og-image" />
+    <meta name="twitter:card" content="summary_large_image" id="meta-twitter-card" />
+    <meta name="twitter:title" content="Urban Army" id="meta-twitter-title" />
+    <meta name="twitter:description" content="Independent game and product studio." id="meta-twitter-description" />
+    <link rel="icon" href="/favicon-urbanarmy.png" id="favicon" />
     <style>
         :root {
             color-scheme: light dark;
@@ -63,42 +72,107 @@
             var host = window.location.hostname.toLowerCase();
             var app = document.getElementById("app");
 
-            var isAmazeballz = host === "amazeballz.urbanarmy.se";
-            var isTilit = host === "tilit.urbanarmy.se";
-            //var isShop = host === "shop.urbanarmy.se";
+            var meta = {
+                ogTitle: document.getElementById("meta-og-title"),
+                ogDescription: document.getElementById("meta-og-description"),
+                ogType: document.getElementById("meta-og-type"),
+                ogUrl: document.getElementById("meta-og-url"),
+                ogImage: document.getElementById("meta-og-image"),
+                twitterCard: document.getElementById("meta-twitter-card"),
+                twitterTitle: document.getElementById("meta-twitter-title"),
+                twitterDescription: document.getElementById("meta-twitter-description"),
+                favicon: document.getElementById("favicon")
+            };
 
-            if (isAmazeballz) {
-                document.title = "Amazeballz";
-                app.innerHTML =
-                    "<span class=\"tag\">Amazeballz</span>" +
-                    "<h1>Welcome to Amazeballz</h1>" +
-                    "<p>Amazeballz is a physics‑driven tilt puzzler where precision beats speed. Roll, spin, and time your moves to guide color‑matched balls into their holes on a sleek, minimalist board. It’s a tactile, real‑world feel—best played on a physical device—where every subtle motion counts.</p>";
-                return;
+            function setMeta(content) {
+                document.title = content.title;
+                meta.ogTitle.setAttribute("content", content.title);
+                meta.ogDescription.setAttribute("content", content.description);
+                meta.ogType.setAttribute("content", content.type);
+                meta.ogUrl.setAttribute("content", window.location.href);
+                meta.ogImage.setAttribute("content", content.ogImage);
+                meta.twitterCard.setAttribute("content", content.twitterCard);
+                meta.twitterTitle.setAttribute("content", content.title);
+                meta.twitterDescription.setAttribute("content", content.description);
+                meta.favicon.setAttribute("href", content.favicon);
             }
 
-            if (isTilit) {
-                document.title = "Tilit";
-                app.innerHTML =
-                    "<span class=\"tag\">Tilit</span>" +
-                    "<h1>Welcome to Tilit</h1>" +
-                    "<p>Tillit is a trust-based restaurant recommendation app built with Flutter + Firebase. It helps users discover great places through personal taste, trusted social connections, and (later) AI-powered recommendations—instead of anonymous star ratings.</p>";
-                return;
-            }
+            var variants = {
+                "amazeballz.urbanarmy.se": {
+                    title: "Amazeballz",
+                    description:
+                        "A physics-driven tilt puzzler where precision beats speed. Roll, spin, and time your moves to guide color-matched balls into their holes on a sleek, minimalist board.",
+                    type: "website",
+                    ogImage: "https://amazeballz.urbanarmy.se/og-amazeballz.png",
+                    twitterCard: "summary_large_image",
+                    favicon: "/favicon-amazeballz.png",
+                    tag: "Amazeballz",
+                    headline: "Welcome to Amazeballz",
+                    body:
+                        "Amazeballz is a physics-driven tilt puzzler where precision beats speed. Roll, spin, and time your moves to guide color-matched balls into their holes on a sleek, minimalist board. It is a tactile, real-world feel - best played on a physical device - where every subtle motion counts."
+                },
+                "tilit.urbanarmy.se": {
+                    title: "Tilit",
+                    description:
+                        "A trust-based restaurant recommendation app built with Flutter + Firebase. Discover great places through personal taste, trusted social connections, and later AI-powered recommendations.",
+                    type: "website",
+                    ogImage: "https://tilit.urbanarmy.se/og-tilit.png",
+                    twitterCard: "summary_large_image",
+                    favicon: "/favicon-tilit.png",
+                    tag: "Tilit",
+                    headline: "Welcome to Tilit",
+                    body:
+                        "Tillit is a trust-based restaurant recommendation app built with Flutter + Firebase. It helps users discover great places through personal taste, trusted social connections, and later AI-powered recommendations - instead of anonymous star ratings."
+                },
+                "urbanarmy.se": {
+                    title: "Urban Army",
+                    description: "Independent game and product studio.",
+                    type: "website",
+                    ogImage: "https://urbanarmy.se/og-urbanarmy.png",
+                    twitterCard: "summary_large_image",
+                    favicon: "/favicon-urbanarmy.png",
+                    tag: "Main site",
+                    headline: "Urban Army",
+                    body: "You are viewing the main site experience."
+                },
+                "www.urbanarmy.se": {
+                    title: "Urban Army",
+                    description: "Independent game and product studio.",
+                    type: "website",
+                    ogImage: "https://urbanarmy.se/og-urbanarmy.png",
+                    twitterCard: "summary_large_image",
+                    favicon: "/favicon-urbanarmy.png",
+                    tag: "Main site",
+                    headline: "Urban Army",
+                    body: "You are viewing the main site experience."
+                }
+            };
 
-            // if (isShop) {
-            //     document.title = "Shop | Urban Army";
-            //     app.innerHTML =
-            //         "<span class=\"tag\">Shop</span>" +
-            //         "<h1>Welcome to Urban Army</h1>" +
-            //         "<p>Urban Army is a Swedish online store for curated art prints, featuring themed collections and a large catalog.</p>";
-            //     return;
-            // }
+            var fallback = {
+                title: "Urban Army",
+                description: "The requested hostname does not match a configured experience.",
+                type: "website",
+                ogImage: "https://urbanarmy.se/og-default.png",
+                twitterCard: "summary_large_image",
+                favicon: "/favicon-urbanarmy.png",
+                tag: "Unknown host",
+                headline: "We could not match that hostname",
+                body:
+                    "You reached this page via an unrecognized hostname. Check the URL or visit urbanarmy.se for the main site."
+            };
 
-            document.title = "Urban Army";
+            var selected = variants[host] || fallback;
+            setMeta(selected);
             app.innerHTML =
-                "<span class=\"tag\">Main site</span>" +
-                "<h1>Urban Army</h1>" +
-                "<p>You are viewing the main site experience.</p>";
+                "<span class=\"tag\">" +
+                selected.tag +
+                "</span>" +
+                "<h1>" +
+                selected.headline +
+                "</h1>" +
+                "<p>" +
+                selected.body +
+                "</p>";
         })();
     </script>
 </body>
