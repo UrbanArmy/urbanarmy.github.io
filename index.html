@@ -65,7 +65,7 @@
 
             var isAmazeballz = host === "amazeballz.urbanarmy.se";
             var isTilit = host === "tilit.urbanarmy.se";
-            var isShop = host === "shop.urbanarmy.se";
+            //var isShop = host === "shop.urbanarmy.se";
 
             if (isAmazeballz) {
                 document.title = "Amazeballz";
@@ -85,14 +85,14 @@
                 return;
             }
 
-            if (isShop) {
-                document.title = "Shop | Urban Army";
-                app.innerHTML =
-                    "<span class=\"tag\">Shop</span>" +
-                    "<h1>Welcome to Urban Army</h1>" +
-                    "<p>Urban Army is a Swedish online store for curated art prints, featuring themed collections and a large catalog.</p>";
-                return;
-            }
+            // if (isShop) {
+            //     document.title = "Shop | Urban Army";
+            //     app.innerHTML =
+            //         "<span class=\"tag\">Shop</span>" +
+            //         "<h1>Welcome to Urban Army</h1>" +
+            //         "<p>Urban Army is a Swedish online store for curated art prints, featuring themed collections and a large catalog.</p>";
+            //     return;
+            // }
 
             document.title = "Urban Army";
             app.innerHTML =
