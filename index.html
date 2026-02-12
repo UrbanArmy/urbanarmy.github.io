@@ -4,177 +4,286 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Urban Army</title>
-    <meta property="og:title" content="Urban Army" id="meta-og-title" />
-    <meta property="og:description" content="Independent game and product studio." id="meta-og-description" />
-    <meta property="og:type" content="website" id="meta-og-type" />
-    <meta property="og:url" content="https://urbanarmy.se" id="meta-og-url" />
-    <meta property="og:image" content="https://urbanarmy.se/og-default.png" id="meta-og-image" />
-    <meta name="twitter:card" content="summary_large_image" id="meta-twitter-card" />
-    <meta name="twitter:title" content="Urban Army" id="meta-twitter-title" />
-    <meta name="twitter:description" content="Independent game and product studio." id="meta-twitter-description" />
-    <link rel="icon" href="/favicon-urbanarmy.png" id="favicon" />
+    <title>Urban Army – Independent Game &amp; Product Studio</title>
+    <meta property="og:title" content="Urban Army – Independent Game & Product Studio" />
+    <meta property="og:description" content="We build playful, polished apps and games. Based in Stockholm, Sweden." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.urbanarmy.se" />
+    <meta property="og:image" content="https://www.urbanarmy.se/og-urbanarmy.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Urban Army – Independent Game & Product Studio" />
+    <meta name="twitter:description" content="We build playful, polished apps and games. Based in Stockholm, Sweden." />
+    <link rel="icon" href="/favicon-urbanarmy.png" />
     <style>
         :root {
             color-scheme: light dark;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             min-height: 100vh;
-            display: grid;
-            place-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background: #0f172a;
             color: #f8fafc;
         }
 
-        .card {
+        .hero {
+            width: 100%;
             max-width: 720px;
-            padding: 32px;
-            border-radius: 16px;
-            background: rgba(15, 23, 42, 0.85);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-            line-height: 1.5;
-        }
-
-        h1 {
-            margin: 0 0 12px;
-            font-size: 28px;
-        }
-
-        p {
-            margin: 0 0 12px;
-            opacity: 0.9;
+            padding: 64px 32px 48px;
+            text-align: center;
         }
 
         .tag {
             display: inline-block;
-            padding: 6px 10px;
+            padding: 6px 12px;
             border-radius: 999px;
             background: #334155;
             font-size: 12px;
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
+
+        h1 {
+            margin: 20px 0 12px;
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            margin: 0 0 32px;
+            font-size: 18px;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 720px;
+            padding: 0 32px 48px;
+        }
+
+        h2 {
+            margin: 0 0 16px;
+            font-size: 22px;
+            color: #94a3b8;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 480px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .product {
+            display: block;
+            padding: 24px;
+            border-radius: 12px;
+            background: rgba(51, 65, 85, 0.45);
+            line-height: 1.5;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+        }
+
+        .product:hover {
+            background: rgba(51, 65, 85, 0.7);
+        }
+
+        .product .product-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: #334155;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .product strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 6px;
+            color: #e2e8f0;
+        }
+
+        .product span {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 480px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feature {
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(51, 65, 85, 0.45);
+            line-height: 1.5;
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #e2e8f0;
+        }
+
+        .feature span {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        p {
+            margin: 0 0 16px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        dl {
+            margin: 0;
+        }
+
+        dt {
+            font-weight: 600;
+            margin-top: 12px;
+            color: #cbd5e1;
+        }
+
+        dd {
+            margin: 2px 0 0;
+            opacity: 0.9;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 720px;
+            padding: 24px 32px 48px;
+            font-size: 14px;
+            opacity: 0.5;
+            text-align: center;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <main id="app" class="card" aria-live="polite">
-        <span class="tag">Loading</span>
-        <h1>Preparing your experience…</h1>
-        <p>Checking the requested hostname.</p>
-    </main>
+    <header class="hero">
+        <span class="tag">Studio</span>
+        <h1>Urban Army</h1>
+        <p class="subtitle">We build playful, polished apps and games. Small team, big attention to detail. Based in
+            Stockholm, Sweden.</p>
+    </header>
 
-    <script>
-        (function () {
-            var host = window.location.hostname.toLowerCase();
-            var app = document.getElementById("app");
+    <section class="section">
+        <h2>Our Products</h2>
+        <div class="products">
+            <a class="product" href="/amazeballz/">
+                <span class="product-tag">Game</span>
+                <strong>Amazeballz</strong>
+                <span>A physics‑driven tilt puzzler where precision beats speed. Guide color‑matched balls into their
+                    holes on a sleek, minimalist board.</span>
+            </a>
+            <a class="product" href="/tilit/">
+                <span class="product-tag">App</span>
+                <strong>Tilit</strong>
+                <span>A trust‑based restaurant recommendation app. Discover great places through personal taste and
+                    trusted social connections.</span>
+            </a>
+        </div>
+    </section>
 
-            var meta = {
-                ogTitle: document.getElementById("meta-og-title"),
-                ogDescription: document.getElementById("meta-og-description"),
-                ogType: document.getElementById("meta-og-type"),
-                ogUrl: document.getElementById("meta-og-url"),
-                ogImage: document.getElementById("meta-og-image"),
-                twitterCard: document.getElementById("meta-twitter-card"),
-                twitterTitle: document.getElementById("meta-twitter-title"),
-                twitterDescription: document.getElementById("meta-twitter-description"),
-                favicon: document.getElementById("favicon")
-            };
+    <section class="section">
+        <h2>What We Do</h2>
+        <div class="features">
+            <div class="feature">
+                <strong>Mobile Games</strong>
+                <span>Tactile, physics‑based experiences designed for real devices and real‑world play.</span>
+            </div>
+            <div class="feature">
+                <strong>Consumer Apps</strong>
+                <span>Thoughtful products that solve everyday problems through smart design and social trust.</span>
+            </div>
+            <div class="feature">
+                <strong>Craft Over Scale</strong>
+                <span>We choose quality and polish over endless feature lists. Every detail matters.</span>
+            </div>
+            <div class="feature">
+                <strong>Stockholm Based</strong>
+                <span>An independent studio rooted in Sweden's vibrant tech and design scene.</span>
+            </div>
+        </div>
+    </section>
 
-            function setMeta(content) {
-                document.title = content.title;
-                meta.ogTitle.setAttribute("content", content.title);
-                meta.ogDescription.setAttribute("content", content.description);
-                meta.ogType.setAttribute("content", content.type);
-                meta.ogUrl.setAttribute("content", window.location.href);
-                meta.ogImage.setAttribute("content", content.ogImage);
-                meta.twitterCard.setAttribute("content", content.twitterCard);
-                meta.twitterTitle.setAttribute("content", content.title);
-                meta.twitterDescription.setAttribute("content", content.description);
-                meta.favicon.setAttribute("href", content.favicon);
-            }
+    <!--
+    <section class="section">
+        <h2>Contact</h2>
+        <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@urbanarmy.se">hello@urbanarmy.se</a></dd>
 
-            var variants = {
-                "amazeballz.urbanarmy.se": {
-                    title: "Amazeballz",
-                    description:
-                        "A physics-driven tilt puzzler where precision beats speed. Roll, spin, and time your moves to guide color-matched balls into their holes on a sleek, minimalist board.",
-                    type: "website",
-                    ogImage: "https://amazeballz.urbanarmy.se/og-amazeballz.png",
-                    twitterCard: "summary_large_image",
-                    favicon: "/favicon-amazeballz.png",
-                    tag: "Amazeballz",
-                    headline: "Welcome to Amazeballz",
-                    body:
-                        "Amazeballz is a physics-driven tilt puzzler where precision beats speed. Roll, spin, and time your moves to guide color-matched balls into their holes on a sleek, minimalist board. It is a tactile, real-world feel - best played on a physical device - where every subtle motion counts."
-                },
-                "tilit.urbanarmy.se": {
-                    title: "Tilit",
-                    description:
-                        "A trust-based restaurant recommendation app built with Flutter + Firebase. Discover great places through personal taste, trusted social connections, and later AI-powered recommendations.",
-                    type: "website",
-                    ogImage: "https://tilit.urbanarmy.se/og-tilit.png",
-                    twitterCard: "summary_large_image",
-                    favicon: "/favicon-tilit.png",
-                    tag: "Tilit",
-                    headline: "Welcome to Tilit",
-                    body:
-                        "Tillit is a trust-based restaurant recommendation app built with Flutter + Firebase. It helps users discover great places through personal taste, trusted social connections, and later AI-powered recommendations - instead of anonymous star ratings."
-                },
-                "urbanarmy.se": {
-                    title: "Urban Army",
-                    description: "Independent game and product studio.",
-                    type: "website",
-                    ogImage: "https://urbanarmy.se/og-urbanarmy.png",
-                    twitterCard: "summary_large_image",
-                    favicon: "/favicon-urbanarmy.png",
-                    tag: "Main site",
-                    headline: "Urban Army",
-                    body: "You are viewing the main site experience."
-                },
-                "www.urbanarmy.se": {
-                    title: "Urban Army",
-                    description: "Independent game and product studio.",
-                    type: "website",
-                    ogImage: "https://urbanarmy.se/og-urbanarmy.png",
-                    twitterCard: "summary_large_image",
-                    favicon: "/favicon-urbanarmy.png",
-                    tag: "Main site",
-                    headline: "Urban Army",
-                    body: "You are viewing the main site experience."
-                }
-            };
+            <dt>Phone</dt>
+            <dd><a href="tel:+46739625146">+46 (0)739‑62 51 46</a></dd>
+        </dl>
 
-            var fallback = {
-                title: "Urban Army",
-                description: "The requested hostname does not match a configured experience.",
-                type: "website",
-                ogImage: "https://urbanarmy.se/og-default.png",
-                twitterCard: "summary_large_image",
-                favicon: "/favicon-urbanarmy.png",
-                tag: "Unknown host",
-                headline: "We could not match that hostname",
-                body:
-                    "You reached this page via an unrecognized hostname. Check the URL or visit urbanarmy.se for the main site."
-            };
+        <h2>Company Information</h2>
+        <dl>
+            <dt>Publisher</dt>
+            <dd>Urban Army AB</dd>
 
-            var selected = variants[host] || fallback;
-            setMeta(selected);
-            app.innerHTML =
-                "<span class=\"tag\">" +
-                selected.tag +
-                "</span>" +
-                "<h1>" +
-                selected.headline +
-                "</h1>" +
-                "<p>" +
-                selected.body +
-                "</p>";
-        })();
-    </script>
+            <dt>Org. number</dt>
+            <dd>559541‑3120</dd>
+
+            <dt>Address</dt>
+            <dd>Döbelnsgatan 6, 111 40 Stockholm, Sweden</dd>
+        </dl>
+    </section>
+    -->
+
+    <footer>
+        <p>&copy; 2026 Urban Army AB</p>
+    </footer>
 </body>
 
 </html>
