@@ -9,9 +9,27 @@ A physics‑driven tilt puzzler where precision beats speed. Roll, spin, and tim
 - https://amazeballz.urbanarmy.se/
 - https://www.urbanarmy.se/amazeballz/
 
+## Shop
+Discover restaurants through people you actually trust. No anonymous reviews — just honest recommendations from friends, foodies, and curators you follow.
+
+- https://tilit.app/
+- https://tilit.urbanarmy.se/
+- https://www.urbanarmy.se/tilit/
+
 ## Tilit
 Discover restaurants through people you actually trust. No anonymous reviews — just honest recommendations from friends, foodies, and curators you follow.
 
 - https://tilit.app/
 - https://tilit.urbanarmy.se/
 - https://www.urbanarmy.se/tilit/
+
+### Local web server
+- Main page: http://localhost:8000/
+- Amazeballz: http://localhost:8000/amazeballz/
+- Shop page: http://localhost:8000/shop/
+- Tilit: http://localhost:8000/tilit/
+
+```bash
+python3 -m http.server 8000
+```
+
