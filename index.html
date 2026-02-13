@@ -15,15 +15,20 @@
     <meta name="twitter:description" content="We build playful, polished apps and games. Based in Stockholm, Sweden." />
     <link rel="icon" href="/favicon-urbanarmy.png" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <style>
-        .tag {
-            background: #e2e2dd;
-            color: #555;
-        }
-    </style>
 </head>
 
 <body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">Urban Army</a>
+            <div class="nav-links">
+                <a href="/amazeballz/">Amazeballz</a>
+                <a href="/tilit/">Tilit</a>
+                <a href="/shop/">Shop</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero">
         <!-- <span class="tag">Studio</span> -->
         <h1>Urban Army</h1>
@@ -31,7 +36,7 @@
             Stockholm, Sweden.</p>
     </header>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>Our Products</h2>
         <div class="products">
             <a class="product" href="/amazeballz/">
@@ -55,7 +60,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>What We Do</h2>
         <div class="features">
             <div class="feature">
@@ -82,34 +87,35 @@
         </div>
     </section>
 
-    <!--
-    <section class="section">
-        <h2>Contact</h2>
-        <dl>
-            <dt>Email</dt>
-            <dd><a href="mailto:hello@urbanarmy.se">hello@urbanarmy.se</a></dd>
-
-            <dt>Phone</dt>
-            <dd><a href="tel:+46739625146">+46 (0)739‑62 51 46</a></dd>
-        </dl>
-
-        <h2>Company Information</h2>
-        <dl>
-            <dt>Publisher</dt>
-            <dd>Urban Army AB</dd>
-
-            <dt>Org. number</dt>
-            <dd>559541‑3120</dd>
-
-            <dt>Address</dt>
-            <dd>Döbelnsgatan 6, 111 40 Stockholm, Sweden</dd>
-        </dl>
-    </section>
-    -->
-
     <footer>
-        <p>&copy; 2026 Urban Army AB</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Urban Army</h3>
+                <p>Independent game &amp; product studio based in Stockholm, Sweden. We build playful, polished apps and
+                    games.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Products</h3>
+                <a href="/amazeballz/">Amazeballz</a>
+                <a href="/tilit/">Tilit</a>
+                <a href="/shop/">Shop</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <a href="mailto:hello@urbanarmy.se">hello@urbanarmy.se</a>
+                <p>Urban Army AB<br>Döbelnsgatan 6<br>111 40 Stockholm, Sweden</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Urban Army AB</span>
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">
+                <span class="theme-toggle-icon">☀️</span>
+                <span class="theme-toggle-label">Light mode</span>
+            </button>
+        </div>
     </footer>
+
+    <script src="/scripts/theme.js"></script>
 </body>
 
 </html>

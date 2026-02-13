@@ -20,6 +20,17 @@
 </head>
 
 <body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">Urban Army</a>
+            <div class="nav-links">
+                <a href="/amazeballz/">Amazeballz</a>
+                <a href="/tilit/">Tilit</a>
+                <a href="/shop/">Shop</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero">
         <span class="tag">Shop</span>
         <h1>Urban Army Shop</h1>
@@ -28,14 +39,14 @@
         <a class="cta" href="https://shop.urbanarmy.se" target="_blank" rel="noopener">Visit Shop</a>
     </header>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>About the Shop</h2>
         <p>Urban Army Shop offers carefully curated art prints with a focus on contemporary fashion, elegant design, and
             bold aesthetics. Each piece is selected to add character and sophistication to modern homes and
             workspaces.</p>
     </section>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>What We Offer</h2>
         <div class="features">
             <div class="feature">
@@ -57,16 +68,22 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>Contact</h2>
         <p>Have questions or need help? Contact us at <a href="mailto:support@urbanarmy.se">support@urbanarmy.se</a> or
             call <a href="tel:+46721553500">+46
                 (0)721‑55 35 00</a>.</p>
     </section>
 
-    <footer>
+    <footer class="footer-simple">
         <p>&copy; 2026 Urban Army AB &middot; <a href="/">urbanarmy.se</a></p>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <span class="theme-toggle-icon">☀️</span>
+            <span class="theme-toggle-label">Light mode</span>
+        </button>
     </footer>
+
+    <script src="/scripts/theme.js"></script>
 </body>
 
 </html>

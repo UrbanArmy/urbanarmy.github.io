@@ -20,6 +20,17 @@
 </head>
 
 <body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">Urban Army</a>
+            <div class="nav-links">
+                <a href="/amazeballz/">Amazeballz</a>
+                <a href="/tilit/">Tilit</a>
+                <a href="/shop/">Shop</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero">
         <span class="tag">Game</span>
         <h1>Amazeballz</h1>
@@ -29,14 +40,14 @@
             App&nbsp;Store</a>
     </header>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>How It Works</h2>
         <p>Tilt your device to roll the balls across the board. Match each ball to its color‑coded hole. Sounds
             simple — but gravity, momentum, and obstacles make every level a fresh challenge. No timers, no
             pressure — just you, the board, and physics.</p>
     </section>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>Features</h2>
         <div class="features">
             <div class="feature">
@@ -58,15 +69,21 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section fade-in">
         <h2>Support</h2>
         <p>Need help or have feedback? Visit our <a href="/amazeballz/support/">support page</a> or email us directly
             at <a href="mailto:amazeballz@urbanarmy.se">amazeballz@urbanarmy.se</a>.</p>
     </section>
 
-    <footer>
+    <footer class="footer-simple">
         <p>&copy; 2026 Urban Army AB &middot; <a href="/">urbanarmy.se</a></p>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <span class="theme-toggle-icon">☀️</span>
+            <span class="theme-toggle-label">Light mode</span>
+        </button>
     </footer>
+
+    <script src="/scripts/theme.js"></script>
 </body>
 
 </html>
