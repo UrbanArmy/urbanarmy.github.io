@@ -12,10 +12,10 @@
         localStorage.setItem(STORAGE_KEY, theme);
 
         document.querySelectorAll('.theme-toggle').forEach(btn => {
-            const icon = btn.querySelector('.theme-toggle-icon');
-            const label = btn.querySelector('.theme-toggle-label');
-            if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
-            if (label) label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+            const darkLabel = btn.querySelector('.theme-label-dark');
+            const lightLabel = btn.querySelector('.theme-label-light');
+            if (darkLabel) darkLabel.classList.toggle('active', theme === 'dark');
+            if (lightLabel) lightLabel.classList.toggle('active', theme === 'light');
         });
     }
 

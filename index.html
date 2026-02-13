@@ -20,7 +20,8 @@
 <body>
     <nav>
         <div class="nav-inner">
-            <a href="/" class="nav-brand">Urban Army</a>
+            <a href="/" class="nav-brand" aria-label="Urban Army"><img src="/assets/logo_dark.svg" alt="Urban Army"
+                    class="logo-dark"><img src="/assets/logo_light.svg" alt="Urban Army" class="logo-light"></a>
             <div class="nav-links">
                 <a href="/amazeballz/">Amazeballz</a>
                 <a href="/tilit/">Tilit</a>
@@ -31,7 +32,10 @@
 
     <header class="hero">
         <!-- <span class="tag">Studio</span> -->
-        <h1>Urban Army</h1>
+        <h1 class="hero-logo">
+            <img src="/assets/logo_dark.svg" alt="Urban Army" class="logo-dark">
+            <img src="/assets/logo_light.svg" alt="Urban Army" class="logo-light">
+        </h1>
         <p class="subtitle">We build playful, polished apps and games. Small team, big attention to detail. Based in
             Stockholm, Sweden.</p>
     </header>
@@ -109,8 +113,9 @@
         <div class="footer-bottom">
             <span>&copy; 2026 Urban Army AB</span>
             <button class="theme-toggle" type="button" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light mode</span>
+                <span class="theme-toggle-label theme-label-dark active">Dark</span>
+                <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
+                <span class="theme-toggle-label theme-label-light">Light</span>
             </button>
         </div>
     </footer>
