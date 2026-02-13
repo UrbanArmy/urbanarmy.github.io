@@ -24,12 +24,8 @@ Discover restaurants through people you actually trust. No anonymous reviews —
 - https://www.urbanarmy.se/tilit/
 
 ### Local web server
+Right click on index.html and choose "Open with Live Server".
 - Main page: http://localhost:8000/
 - Amazeballz: http://localhost:8000/amazeballz/
 - Shop page: http://localhost:8000/shop/
 - Tilit: http://localhost:8000/tilit/
-
-```bash
-python3 -m http.server 8000
-```
-
