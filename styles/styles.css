@@ -242,6 +242,8 @@ h1 {
 .cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(90, 124, 80, 0.4);
+    color: #fff;
+    text-decoration: none;
 }
 
 /* ─── Sections ─── */
@@ -671,7 +673,7 @@ footer {
 }
 
 /* ─── Responsive ─── */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .hero {
         padding: 64px 20px 48px;
     }
@@ -681,12 +683,39 @@ footer {
     }
 
     .card {
-        padding: 36px 24px;
-        margin: 32px 12px;
+        padding: 40px 20px;
+        margin: 32px 16px;
     }
 
     nav {
         padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    footer {
+        padding: 36px 20px 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 48px 16px 40px;
+    }
+
+    .section {
+        padding: 0 16px 48px;
+    }
+
+    .card {
+        padding: 32px 16px;
+        margin: 24px 12px;
+    }
+
+    nav {
+        padding: 0 16px;
     }
 
     .nav-links {
@@ -707,7 +736,7 @@ footer {
     }
 
     footer {
-        padding: 36px 20px 48px;
+        padding: 32px 16px 40px;
     }
 
     .footer-grid {
