@@ -148,7 +148,7 @@ nav {
     top: -120px;
     left: 50%;
     transform: translateX(-50%);
-    width: 700px;
+    width: min(700px, 100vw);
     height: 500px;
     background: radial-gradient(ellipse at center, var(--glow) 0%, transparent 70%);
     pointer-events: none;
