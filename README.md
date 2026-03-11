@@ -23,6 +23,19 @@ Discover restaurants through people you actually trust. No anonymous reviews —
 - https://tilit.urbanarmy.se/
 - https://www.urbanarmy.se/tilit/
 
+## Nappet
+Participate in live fishing contests, register your catches with photos, and follow the leaderboard in real time.
+
+- https://nappet.urbanarmy.se/
+- https://www.urbanarmy.se/nappet/
+
+## Minago
+- https://minago.app/
+- https://minago.se/
+- https://minago.urbanarmy.se/
+- https://www.urbanarmy.se/minago/
+
+
 ### Local web server
 Right click on index.html and choose "Open with Live Server".
 - Main page: http://localhost:8000/
