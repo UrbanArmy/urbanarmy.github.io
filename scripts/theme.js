@@ -43,5 +43,13 @@
             });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fade-in').forEach(function (el) { observer.observe(el); });
+
+        // Close mobile nav menu on link tap
+        var navToggle = document.getElementById('nav-toggle');
+        if (navToggle) {
+            document.querySelectorAll('.nav-links a').forEach(function (link) {
+                link.addEventListener('click', function () { navToggle.checked = false; });
+            });
+        }
     });
 })();
