@@ -8,7 +8,7 @@ A physics‑driven tilt puzzler where precision beats speed. Roll, spin, and tim
 
 - https://amazeballz.urbanarmy.se/
 - https://www.urbanarmy.se/amazeballz/
-- https://apps.apple.com/us/app/amazeballz-tilt-puzzle/id6759067206
+- https://apps.apple.com/se/app/amazeballz-tilt-puzzle/id6759067206
 - https://play.google.com/store/apps/details?id=se.urbanarmy.amazeballz
 
 ## Shop
@@ -24,7 +24,7 @@ Discover restaurants through people you actually trust. No anonymous reviews —
 - https://tilit.app/
 - https://tilit.urbanarmy.se/
 - https://www.urbanarmy.se/tilit/
-- https://apps.apple.com/us/app/if-you-like-it-tilit/id6759070771
+- https://apps.apple.com/se/app/if-you-like-it-tilit/id6759070771
 - https://play.google.com/store/apps/details?id=app.tilit
 
 ## Nappet
@@ -32,7 +32,7 @@ Participate in live fishing contests, register your catches with photos, and fol
 
 - https://nappet.urbanarmy.se/
 - https://www.urbanarmy.se/nappet/
-- https://apps.apple.com/us/app/nappet/id6759869531
+- https://apps.apple.com/se/app/nappet/id6759869531
 - https://play.google.com/store/apps/details?id=com.urbanarmy.nappet
 
 ## Minago
@@ -40,7 +40,7 @@ Participate in live fishing contests, register your catches with photos, and fol
 - https://minago.se/
 - https://minago.urbanarmy.se/
 - https://www.urbanarmy.se/minago/
-- https://apps.apple.com/us/app/nappet/id6760669266
+- https://apps.apple.com/se/app/minago/id6760669266
 
 
 ### Local web server
