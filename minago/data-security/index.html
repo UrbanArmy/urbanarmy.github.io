@@ -40,52 +40,75 @@
         <h1>Your Privacy & Data Security</h1>
 
         <h2>How We Protect Your Information</h2>
-        <p>Minago is built around a simple principle: your most sensitive information should be readable only by you — not
-            by us, not by our team, and not by anyone else.</p>
+        <p>Minago is built around one principle: your most sensitive information is readable only by you — not by us, not
+            by our team, and not by anyone with access to our systems.</p>
 
-        <h2>What Information We Store</h2>
+        <h2>What information we store</h2>
         <p>We store the details you add about your belongings and properties so you can access them from any device after
             signing in. This includes names, photos, categories, and other details you choose to add.</p>
         <p>Certain information — such as addresses, financial values, insurance policy numbers, and other sensitive
-            details — is treated with a higher level of protection than the rest of your data.</p>
+            details — is treated with the highest level of protection.</p>
 
-        <h2>How We Protect Your Sensitive Information</h2>
-        <p>Your sensitive information is encrypted before it is stored. This means that even if someone were to access
-            our database directly, they would see only unreadable data — not your actual values, addresses, or policy
-            numbers.</p>
-        <p>The key used to decrypt your information is never stored on your device and never stored by us in readable
-            form. It is only made available to you when you are actively signed in to your account.</p>
-
-        <h2>Your Account and Your Data</h2>
-        <p>Your data is linked to your account, not to any specific device or set of login credentials. This means:</p>
+        <h2>Zero-knowledge encryption</h2>
+        <p>Your sensitive information is encrypted on your device before it is ever sent to our servers. This means:</p>
         <ul>
-            <li>You can access your information from any device by signing in</li>
-            <li>Changing your email, password, or display name does not affect your access to your data</li>
+            <li><strong>We cannot read your sensitive data.</strong> Our servers store only encrypted, unreadable data —
+                not the values you entered.</li>
+            <li><strong>We do not hold your encryption key.</strong> Your key is derived from a passphrase only you
+                know, using a memory-hard algorithm (Argon2id). The passphrase never leaves your device.</li>
+            <li>Even if our database were exposed, the data would be unreadable without your personal passphrase.</li>
+        </ul>
+
+        <h2>Your passphrase</h2>
+        <p>When you first enable data protection, you create a personal passphrase. This passphrase is used to unlock
+            your data on each new device you sign in to.</p>
+        <ul>
+            <li>Your passphrase is never stored or transmitted — not to us, not to any server.</li>
+            <li>On a device you have used before, your key is stored securely in the device's protected storage (iOS
+                Keychain / Android Keystore) so you do not need to re-enter your passphrase each time.</li>
+            <li>On a new device, you will be asked to enter your passphrase once.</li>
+        </ul>
+
+        <h2>Recovery key</h2>
+        <p>During setup, you have the option to generate a recovery key. This key allows you to regain access to your
+            data if you forget your passphrase.</p>
+        <p><strong>Important:</strong> The recovery key is shown only once and is never stored by us. If you lose both
+            your passphrase and your recovery key, your encrypted data cannot be recovered — by you or by us. This is
+            intentional: it is the guarantee that only you can access your information.</p>
+
+        <h2>Your account and your data</h2>
+        <p>Your data is linked to your account, not to any specific device or set of login credentials:</p>
+        <ul>
+            <li>You can access your data from any device by signing in and entering your passphrase</li>
+            <li>Changing your email, password, or display name has no effect on your encrypted data</li>
             <li>Signing in on a new phone works the same as on your current one</li>
         </ul>
 
-        <h2>What We Cannot See</h2>
-        <p>Our team does not have access to your sensitive information in readable form. This includes:</p>
+        <h2>What we cannot see</h2>
+        <p>Our team has no access to your sensitive information. This includes:</p>
         <ul>
-            <li>Exact addresses and locations</li>
+            <li>Exact addresses and property locations</li>
             <li>Purchase prices and estimated values</li>
             <li>Insurance policy numbers and policyholder details</li>
             <li>Mortgage information</li>
             <li>Any other financial or personal details you have entered</li>
         </ul>
 
-        <h2>Access Logging</h2>
-        <p>Every time sensitive information is accessed within the app, a record is created in your account. This log is
-            for your protection and helps ensure that your data is only accessed by you.</p>
+        <h2>Access logging</h2>
+        <p>Every time sensitive information is accessed in the app, a record is created in your account. This log is
+            private to you and is used to protect your data by tracking when and how it is accessed.</p>
 
-        <h2>Your Responsibility</h2>
-        <p>Your data is protected as long as your account is secure. We recommend using a strong, unique password and
-            enabling any additional security options offered by your email provider.</p>
+        <h2>Your responsibility</h2>
+        <p>Your data is protected as long as your passphrase and recovery key are kept safe. We recommend:</p>
+        <ul>
+            <li>Choosing a strong, unique passphrase</li>
+            <li>Saving your recovery key in a secure location (password manager, printed and stored safely)</li>
+            <li>Using a strong password for your email account</li>
+        </ul>
         <p>If you believe your account has been compromised, change your password immediately.</p>
 
         <h2>Contact</h2>
-        <p>For questions about your data or to request deletion of your account and all associated information, please
-            contact us.</p>
+        <p>For questions about your data or to request deletion of your account and all associated information:</p>
         <dl>
             <dt>Email</dt>
             <dd><a href="mailto:minago@urbanarmy.se">minago@urbanarmy.se</a></dd>
