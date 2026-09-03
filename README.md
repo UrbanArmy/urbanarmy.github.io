@@ -43,9 +43,21 @@ Participate in live fishing contests, register your catches with photos, and fol
 - https://apps.apple.com/se/app/minago/id6760669266
 
 
+## The Gogolis
+Six small, funny, huggable characters who sing children through the ordinary moments of a day — brushing teeth, taking a bath, tidying up, eating vegetables, going somewhere new. AI-generated music and animation with human-written lyrics, for roughly ages 1–4. Cast: Gambo · Poff · Nibs · Lilly · Toti · Mimi.
+
+- https://thegogolis.com/
+- https://www.urbanarmy.se/thegogolis/
+- https://www.youtube.com/@The-Gogolis
+- https://www.instagram.com/thegogolis/
+- https://open.spotify.com/artist/1YtAuwTsk8PC4yX342eVrs
+- https://music.apple.com/us/artist/the-gogolis/6807570998
+
+
 ### Local web server
 Right click on index.html and choose "Open with Live Server".
 - Main page: http://localhost:8000/
 - Amazeballz: http://localhost:8000/amazeballz/
 - Shop page: http://localhost:8000/shop/
 - Tilit: http://localhost:8000/tilit/
+- The Gogolis: http://localhost:8000/thegogolis/
