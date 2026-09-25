@@ -54,6 +54,16 @@ Six small, funny, huggable characters who sing children through the ordinary mom
 - https://music.apple.com/us/artist/the-gogolis/6807570998
 
 
+## LumaLog
+A real wood log with a warm light hidden inside. Stand it with your other logs and an unused fireplace glows like a fire, with no flame, no heat and no cables. Up to six hidden light zones light the surrounding logs and hearth; control it with the button underneath or the app over Bluetooth. In prototype (P01); birch first, beech, oak and pine planned.
+
+- https://getlumalog.com/
+- https://www.urbanarmy.se/lumalog/
+- https://www.instagram.com/getlumalog/
+- https://www.tiktok.com/@getlumalog
+- https://www.pinterest.com/getlumalog/
+
+
 ### Local web server
 Right click on index.html and choose "Open with Live Server".
 - Main page: http://localhost:8000/
@@ -61,3 +71,4 @@ Right click on index.html and choose "Open with Live Server".
 - Shop page: http://localhost:8000/shop/
 - Tilit: http://localhost:8000/tilit/
 - The Gogolis: http://localhost:8000/thegogolis/
+- LumaLog: http://localhost:8000/lumalog/
